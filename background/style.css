@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.sr-only{
+    position: absolute;
+    z-index: -100;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+}
+
+
+
+.like-button {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-image: url('./assets/icon-favorite.svg');
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border-radius: 100px;
+    background-repeat   : no-repeat;
+    border: none;
+    background-position: center center;
+    background-size: 24px 24px;
+    position: absolute;
+    top:12px;
+    left: 12px;
+    cursor: pointer;
+  }
+
+.card-image image{
+    width: 100%;
+    height: auto;
+    
+}
+.card-image {
+    position: relative;
+    margin-right: 24px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('./assets/img-house.jpg');
+    width: 300px;
+    height: 200px;
+    background-size:cover ;
+    border-radius: 6px;  
+}
+
+.plus-badge { 
+    background-color: #92174D;
+    line-height: 1.4285714286;
+    font-weight: 500;
+    color: #FFF;
+    display: inline-block;
+    padding: 1px 8px;
+    border-radius: 4px;
+    border: none;
+    text-transform: uppercase;    
+    font-size: 14px;
+    margin-right: 6px;
+}
+.property-type span { 
+    display: block;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #7D858F;
+    width: 136px;
+    height: 20px;
+}
+.property-type{
+    display: flex;
+    flex-direction: row;
+}
+.card-header{
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.property-rate{
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    
+    width: 93px;
+    height: 20px;
+}
+.property-rate::before{
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    background-position: center center;
+    background-image: url('./assets/icon-star.svg');
+    background-repeat: no-repeat;
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    
+    width: 840px;
+    padding: 24px;
+    background-color: white;
+    
+
+}
+
+.property-rate strong{
+    font-weight: 400;
+    display: flex;
+    color: #151B26;
+}
+.property-rate span{
+    display: flex;
+    color: #7D858F;
+    
+}
+
+
+.card-title {
+    margin-bottom: 16px;
+    display: block;
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #151B26;
+}
+.property-detail { 
+    font-size: 14px;
+    line-height: 1.1428571429;
+    color: #7D858F;
+    
+}
+
+.property-detail dd span::after { 
+    content: '·';
+    margin: 0 2px;
+}
+.property-detail dd span:last-child::after{
+    content: '';
+    margin:0;
+}
+
+.property-detail div:first-child{
+    margin-bottom: 8px;
+}
+.card-content{
+    flex-grow: 1;
+}
+
+  /* ▼ WHERE YOUR CODE BEGINS */
