@@ -1,0 +1,5 @@
+1. 아래의 Figma 디자인 시안을 다운 받아주세요.
+2. 그리드 시스템은 Bootstrap에서 제공하는 그리드 시스템을 기본적으로 적용하나,
+   maximum container 사이즈를 960px로 제한합니다
+3. 모바일 시안과 데스크탑 시안의 중단점 Breakpoint는 768px입니다.
+4. 아래 Resource의 폰트와 asset파일 , CSS 파일을 활용하여 작업해주세요

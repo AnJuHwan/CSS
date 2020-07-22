@@ -1,0 +1,338 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+body{
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Reset CSS */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+button,input,textarea{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+}
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active{
+    box-shadow: none;
+    outline: none; 
+    /* outline 요기 아니면 안씀 */
+}
+
+ul,ol,li{
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+p{
+    font-size: 16px;
+    line-height: 1.5;
+    color:#2B292D;
+    letter-spacing: -0.01em;
+}
+
+
+/* Custom Grid System - Fix container width */
+@media screen and (min-width: 1200px)
+{
+    .container{
+        max-width: 960px !important;
+    }
+}
+
+
+/* landing */
+
+.landing-title { 
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    font-weight: 700;
+    color: #2B292D;
+    text-align: center;
+}
+.landing-description { 
+    text-align: center;
+    margin: 24px 0;
+}
+.landing-buttongroup
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landing-header { 
+    background-color: #FDDED8;
+    padding: 154px 15px;
+    width: 100%;
+    height: 568px;
+}
+
+.button { 
+    display: flex;
+    width: 140px;
+    height: 48px;
+    background-color: #3040C4;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+.button-inverted { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 48px;
+    background-color: #fff;
+    color: #3040C4;
+    margin-left: 8px;
+    border-radius: 2px;
+
+}
+/* Testimonials */
+.Testimonials-nav { 
+    background-color: #F4F5F7;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 496px;
+    padding: 80px 15px;
+}
+.Testimonials-title { 
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: -0.04em;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    font-weight: 700;
+    color: #2B292D;
+}
+
+.Testimonials-nav div:first-child { 
+    content: '';
+    margin-bottom: 40px;
+
+}
+
+
+/* section */
+
+.section-program { 
+    padding: 80px 15px;
+    width: 100%;
+    height: 1377px;
+}
+.program { 
+    display: inline-block;
+    color: #009B4D;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    letter-spacing: -0.01em;
+}
+.Frontend-Dev { 
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 36px;
+    letter-spacing: -0.03em;
+    color: #2B292D;
+    margin-bottom:24px ;
+}
+
+.program-header p { 
+    margin-bottom: 32px;
+}
+
+.program-img{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.program-img div {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.program-img div span { 
+    text-align: center;
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+}
+
+.img-campus { 
+    
+    width: 290px;
+    height: 291px;
+    
+    
+}
+
+.img-remote{    
+    width: 290px;
+    height: 291px;
+    margin: 20px 0;
+    
+}
+.img-flex {   
+    width: 290px;
+    height: 291px;
+    
+}
+
+.compus { 
+    background-image :url('./assets/img-fulltime-campus.png');
+    background-repeat:no-repeat;
+    background-size: contain;
+    width: 142.21px;
+    height: 195px;
+    margin-bottom: 16px;
+}
+.remote{ 
+    background-image :url('./assets/img-fulltime-remote.png');
+    background-repeat:no-repeat;
+    background-size: contain;
+    width: 142.21px;
+    height: 195px;
+    margin-bottom: 16px;
+}
+.flex{
+    background-image :url('./assets/img-parttime-flex.png');
+    background-repeat:no-repeat;
+    background-size: contain;
+    width: 142.21px;
+    height: 195px;
+    margin-bottom: 16px;
+}
+.program-img div:hover { 
+    background-color: #3141C5;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+@media screen and (min-width:768px) {
+    p{
+     font-size : 22px;
+     line-height :1.3636363636;
+    }
+    /* landing */
+    .landing-title{
+        font-size: 70px;
+        line-height: 72px;
+    }
+    .landing-description{
+        margin:32px 0 ;
+    }
+    .button{
+        width: 160px;
+        height: 56px;
+        font-size: 18px;
+    }
+    .button-inverted{
+        width: 160px;
+        height: 56px;
+        margin-left: 16px;
+        font-size: 18px;
+    }
+
+    /* Testimonials */
+    .Testimonials-nav { 
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 340px;
+        padding: 80px 255px;
+        
+    }
+    .Testimonials { 
+        display: flex;
+        flex-direction: column;
+    }
+    .Testimonials-title { 
+        width: 370px;
+        height: 68px;
+        font-size: 26px;
+        line-height: 34px;
+        letter-spacing: -0.04em;
+        font-weight: 700;
+    }
+    .Testimonials-nav div:last-child p { 
+        content: '';
+        width: 450px;
+        height: 96px;
+    }
+    .Testimonials-nav div:first-child p { 
+        content: '';
+        width: 370px;
+        height: 96px;
+    }
+    .Testimonials-nav div:first-child{ 
+        content: '';
+        margin-right: 110px;
+        margin-bottom: 0px;
+    }
+    /* section */
+    .section-program{
+        height: 827px;
+    }
+    .program { 
+        font-size: 22px;
+        line-height: 24px;
+        text-align: center;
+        width: 100%;
+    }
+    .Frontend-Dev { 
+        font-size: 56px;
+        line-height: 56px;
+        text-align: center;
+    }
+    .program-header p {
+        width: 770px;
+        height: 96px;
+        margin: 0 auto;
+    }
+    .program-img { 
+        width: 930px;
+        height: 299px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+
+    .program-img div span { 
+        font-size: 20px;
+    }
+    
+    
+    
+} 
+
+
